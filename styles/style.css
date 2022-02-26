@@ -292,8 +292,10 @@ contact Area
  --------------*/
 
  @media only screen and (max-width:767px) {
+    
+     
     .nav-container{
-        margin: 2px 5px;
+
         justify-content: center;
         width: 100%;
     }
@@ -305,7 +307,6 @@ contact Area
     }
     .top-container{
         flex-direction: column-reverse;
-        width: 100%;
         text-align: center;
     }
     .top-headline{
@@ -316,7 +317,7 @@ contact Area
         font-size: 14px;
         line-height: 21px;
     }
-    .top-container, .top-itmes, .top-intro, .top-image, .nav-container{
+    hr, .top-container, .top-itmes, .top-intro, .top-image, .nav-container{
         margin:10px 0px;
         padding: 0;
         width: 100%;
@@ -335,7 +336,7 @@ contact Area
 
 
 
-    .e-shops, .collections-container, .buttom-container {
+    .collections-container, .buttom-container {
         display: none;
     }
     footer{
