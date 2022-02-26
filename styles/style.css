@@ -3,8 +3,7 @@ body{
     font-family: 'Manrope', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin:10px 0px 0px;  
-    
+    margin:10px 0px 0px;     
 }
 hr{
     border: 0;
@@ -20,8 +19,6 @@ footer{
     padding: 50px;
     margin: 100px 0px 0px 0px;
 }
-
-
  /*---------------
   Nav Bar
   --------------*/
@@ -30,8 +27,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     color: #3A3A3A;  
-    margin: 10px 8%; 
-    
+    margin: 10px 8%;     
 }
 .nav-title{
     font-size: 24px;
@@ -82,7 +78,6 @@ footer{
     text-decoration: none;
     cursor: pointer;
  }
- 
  .top-image{
     background-image: url(/images/Circle-design.svg);
     background-position: center;
@@ -190,59 +185,55 @@ contact Area
 .contact-container {
     max-width: 450px;
     width: 100%;
-    padding-right: 50px;
-  }
+}
+    
   
-  #contact input[type="text"],
-  #contact input[type="email"],
-  #contact input[type="tel"],
-  #contact input[type="url"],
-  #contact textarea,
-  #contact button[type="submit"] {
-    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-  }
-  
-  #contact {
-    background: #F9F9F9;
-    padding: 25px;
-    margin: 50px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
-  
-  #contact h3 {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
-  }
-  
-  fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-  }
-  
-  #contact input[type="text"],
-  #contact input[type="email"],
-  #contact input[type="tel"],
-  #contact input[type="url"],
-  #contact textarea {
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
-  }
-  
-  
-  #contact textarea {
+}
+#contact textarea {
     height: 100px;
     max-width: 100%;
     resize: none;
-  }
-  
-  #contact button[type="submit"] {
+}
+#contact button[type="submit"] {
     cursor: pointer;
     width: 100%;
     border: none;
@@ -251,11 +242,7 @@ contact Area
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
-  }
-  
-
-
-
+}
 /*-----------------
      Footer 
 -------------------*/
@@ -277,8 +264,8 @@ contact Area
     margin: 0;
 }
 .sosal-logo{
-     display: flex; 
-     justify-content: center;
+    display: flex; 
+    justify-content: center;
 }
 .fa-brands{
     background: #b6b2b220;
@@ -292,18 +279,25 @@ contact Area
  --------------*/
 
  @media only screen and (max-width:767px) {
-    
-     
-    .nav-container{
-
-        justify-content: center;
-        width: 100%;
+     main{
+         display: flex;
+         flex-direction: column;
+         padding: 0px 20px;
+     }
+    .nav-container,.e-shops{
+        justify-content: center;   
     }
     .nav-title{
         font-size: 16px;
     }
-    .nav-items{
+    hr,.nav-items{
         display: none;
+    }
+/* --------------- */
+    .top-container, .top-itmes, .top-intro, .top-image, .nav-container,.e-shops,.collections-container,.products, footer{
+        margin:10px 0px;
+        padding: 0;
+        width: 100%;
     }
     .top-container{
         flex-direction: column-reverse;
@@ -317,43 +311,19 @@ contact Area
         font-size: 14px;
         line-height: 21px;
     }
-    hr, .top-container, .top-itmes, .top-intro, .top-image, .nav-container{
-        margin:10px 0px;
-        padding: 0;
-        width: 100%;
-    }
-    .top-image{
-        width: 260px;
-    }
-    .top-image img{
+    .top-image, .top-image img{
         width: 250px;
         height: 250px;
     }
-
-
-
-
-
-
-
-    .collections-container, .buttom-container {
-        display: none;
+/* ----------------- */
+    .logo{
+        width: 4em;
     }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+/* ------------------- */
     footer{
-        display: none;
+        padding:50px 0px;
     }
-
-
- }
-
-
-
-
-
-
-
-
-
-
-
-
+}
